@@ -24,9 +24,6 @@ public class StaticGenerator {
         // 输出路径：直接输出到项目的根目录
         String outputPath = projectPath;
 
-        System.out.println(projectPath);
-        System.out.println(parentFile);
-        System.out.println(outputPath);
         copyFilesByRecursive(inputPath, outputPath);
     }
 
@@ -70,7 +67,7 @@ public class StaticGenerator {
     private static void copyFileByRecursive(File inputFile, File outputFile) throws IOException {
         // 区分是文件还是目录
         if (inputFile.isDirectory()) {
-            System.out.println(inputFile.getName());
+//            System.out.println(inputFile.getName());
             File destOutputFile = new File(outputFile, inputFile.getName());
             // 如果是目录，首先创建目标目录
             if (!destOutputFile.exists()) {
