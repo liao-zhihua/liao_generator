@@ -1,6 +1,5 @@
 ### Custom template
-.idea
-liao_generator.iml
+*.idea
 *.iml
 
 ### Java template
